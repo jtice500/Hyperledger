@@ -6,11 +6,11 @@ async function main() {
 
     var args = process.argv.slice(2);
 
-    let assetid = args[0];
-    let source = args[1];
-    let destination = args[2];
-    let energy = args[3];
-    let price = args[4];
+    //let assetid = args[0];
+    let source = args[0];
+    let destination = args[1];
+    let energy = args[2];
+    let price = args[3];
 
 
     try {
@@ -40,6 +40,11 @@ async function main() {
 
         // Get the contract from the network.
         const contract = network.getContract('evtrans');
+
+        let count = await contract.evaluateTransaction('getAssetNum');
+        count = parseInt(count) + 1;
+
+        let assetid = 'asset' + count;
 
         // Submit the specified transaction.
         await contract.submitTransaction('createTrans', assetid, source, destination, energy, price);

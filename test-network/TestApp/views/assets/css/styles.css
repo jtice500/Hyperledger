@@ -1,0 +1,33 @@
+body {
+  background: #444444;
+  margin: 50px;
+}
+
+.form-group {
+  padding-top: 150px;
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.h1, h1 {
+  text-align: center;
+  color: beige;
+}
+
+div {
+  margin-top: -100px;
+}
+
+input {
+  margin-top: 10xp;
+  margin-top: 10px;
+}
+
+#submitForm {
+  /*align-items: center;*/
+  /*margin-top: 30px 60px;*/
+  /*justify-self: center;*/
+  border-radius: 360px;
+  margin: 10px 300px;
+}
+

@@ -82,7 +82,6 @@ class evtrans extends Contract {
           throw new Error('Must buy at least 10 energy');
         } else {
           ctx.stub.putState(asset.ID, Buffer.from(JSON.stringify(asset)));
-          count++;
           return JSON.stringify(asset);
         }
     }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>PaymentForm</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alike+Angular">
+    <link rel="stylesheet" href="assets/bootstrap/js/bootstrap.min.js">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="text/javascript" src="../Chaincode/createTrans.js"></script>
+</head>
+
+<body>
+    <h1>Charging Station ($0.13/KW)&nbsp;</h1>
+    <div>
+        <form action="/Chaincode/createTrans.js" method="POST">
+            <div class="form-group d-flex flex-column justify-content-center">
+                <input class="form-control" type="text" id="nameField" placeholder="Full Name" name="nameField">
+                <input class="form-control" type="number" id="energyField" placeholder="Amount of Energy to Buy ($0.13/KW) (Max 100KW per person)" name="energyField">
+                <button class="btn btn-primary" id="submitForm" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

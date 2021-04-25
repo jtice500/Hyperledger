@@ -41,7 +41,7 @@ async function main() {
         const contract = network.getContract('evtrans');
 
         // Evaluate the specified transaction.
-        // queryCar transaction - requires 1 argument, ex: ('queryCar', 'CAR4')
+        // queryCar transaction - requires 1 argument, ex: ('queryledger, asset1')
         // queryAllCars transaction - requires no arguments, ex: ('queryAllCars')
         const result = await contract.evaluateTransaction('queryLedger');
 
