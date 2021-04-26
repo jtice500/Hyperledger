@@ -18,11 +18,15 @@
         <form action="/invoke" method="POST">
             <div class="form-group d-flex flex-column justify-content-center">
                 <input class="form-control" type="text" placeholder="Full Name" name="nameField" >
-                <input class="form-control" type="number" placeholder="Amount of Energy to Buy ($0.13/KW) (Max 100KW per person)" name="energyField">
-                <button class="btn btn-primary" id="submitForm" type="submit">Query The Ledger</button>
-                <p id="query">{{ test }}</p>
+                <input class="form-control" type="text" placeholder="Amount of Energy to Buy ($0.13/KW) (Max 100KW per person)" name="energyField">
+                <button class="btn btn-primary" id="submitForm" type="submit">Submit</button>
+                <h2>{{ title }}</h2>
+                <ul class="result">
+                <p id="query">{{ test }}</p><br>
+                </ul>
             </div>
         </form>
+        <a href="/query">Query Ledger</a>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

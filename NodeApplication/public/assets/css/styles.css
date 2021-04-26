@@ -27,6 +27,16 @@ input {
   color: white;
 }
 
+h2 {
+  text-align: center;
+  color: beige;
+  margin-top: 20px;
+}
+
+p {
+  display: block;
+}
+
 #submitForm {
   /*align-items: center;*/
   /*margin-top: 30px 60px;*/
