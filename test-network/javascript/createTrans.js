@@ -10,7 +10,7 @@ async function main() {
     let source = args[0];
     let destination = args[1];
     let energy = args[2];
-    let price = args[3];
+    //let price = args[3];
 
 
     try {
@@ -47,7 +47,7 @@ async function main() {
         let assetid = 'asset' + count;
 
         // Submit the specified transaction.
-        await contract.submitTransaction('createTrans', assetid, source, destination, energy, price);
+        await contract.submitTransaction('createTrans', assetid, source, destination, energy);
         console.log('Transaction has been submitted');
 
         // Disconnect from the gateway.

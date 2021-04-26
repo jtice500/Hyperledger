@@ -66,7 +66,9 @@ class evtrans extends Contract {
     }
 
     // CreateAsset issues a new asset to the world state with given details.
-    async createTrans(ctx, id, source, destination, energy, price) {
+    async createTrans(ctx, id, source, destination, energy) {
+
+        let price = parseInt(energy) * 0.13;
 
         const asset = {
             ID: id ,
@@ -78,7 +80,7 @@ class evtrans extends Contract {
         };
        
     
-        if (asset.Energy < 10) {
+        if (asset.Energy > 200) {
           throw new Error('Must buy at least 10 energy');
         } else {
           ctx.stub.putState(asset.ID, Buffer.from(JSON.stringify(asset)));
@@ -103,6 +105,7 @@ class evtrans extends Contract {
         }
 
         let temp = new Date()
+        
 
         const updatedAsset = {
             ID: id,
