@@ -1,0 +1,15 @@
+{
+  "name": "nodeapplication",
+  "version": "1.0.0",
+  "description": "Front-end application for custom hyperledger-fabric chaincode",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "James Massengille",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
